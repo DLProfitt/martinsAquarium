@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@800&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+}
+
+a {
+    color: azure;
+}
+
+body {
+    display: flex;
+    /* background-color: red; */
+}
+
+
+.hero {
+    position: fixed;
+    background-image: url("../images/heroImage.png");
+    background-size: cover;
+    /* background-color: palevioletred; */
+    width: 100vw;
+    min-width: none;
+    height: 100vh;
+    z-index: -1;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    max-height: 250px;
+}
+
+#logo > img {
+    display: flex;
+    justify-content: center;
+    max-width: 30vw;
+    min-width: 250px;
+    /* background-color: blue; */
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: #041E4D;
+    /* border: 2px solid black;  */
+}
+
+.belowNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    /* border: 2px solid black; */
+}
+
+.menuButton {
+    display: flex;
+    justify-content: center;
+    width: 10vw;
+    min-width: fit-content;
+    background-color: #041E4D;
+    /* border: 4px solid white; */
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    min-width: fit-content;
+    color: aliceblue;
+    /* background-color: limegreen; */
+    /* border: 4px solid white; */
+}
+
+.smallLogo {
+    display: flex;
+    justify-content: center;
+    width: 10vw;
+    min-width: fit-content;
+    /* background-color: rgb(0, 89, 255); */
+    /* border: 4px solid white; */
+}
+
+.dropdown {
+    display: flex;
+    /* position: fixed; */
+    width: 20%;
+    min-width: fit-content;
+    background-color: #293690;
+    /* border: 4px solid white; */
+}
+
+.dropdown a {
+    text-decoration: none;
+}
+
+.listsAndAside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    height: fit-content;
+    /* border: 2px solid black; */
+}
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30vw;
+    min-width: 250px;
+    /* background-color: aliceblue; */
+    /* border: 2px solid lime; */
+}
+
+.fishList   {
+    padding: 24px;
+    margin-top: 24px;
+    margin-right: 24px;
+    margin-bottom: 12px;
+    margin-left: 24px;
+    background-color: aliceblue;
+    /* border: 4px solid white;  */
+}
+
+.harvestSites {
+    padding: 24px;
+    margin-top: 24px;
+    margin-right: 24px;
+    margin-bottom: 12px;
+    margin-left: 24px;
+    background-color: aliceblue;
+    /* border: 4px solid white; */
+}
+
+.aside {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    min-width: fit-content;
+    margin: 25px;
+    background-color: aliceblue;
+}
