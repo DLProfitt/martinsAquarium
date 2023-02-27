@@ -45,6 +45,7 @@ body {
 .navBar {
     display: flex;
     justify-content: center;
+    min-height: 3em;
     width: 100vw;
     background-color: #041E4D;
     /* border: 2px solid black;  */
@@ -104,7 +105,7 @@ body {
 .listsAndAside{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
     flex-direction: row;
     width: 100vw;
@@ -123,14 +124,23 @@ body {
     /* border: 2px solid lime; */
 }
 
-.fishList   {
+.fishList {
     padding: 24px;
     margin-top: 24px;
     margin-right: 24px;
     margin-bottom: 12px;
     margin-left: 24px;
-    background-color: aliceblue;
-    /* border: 4px solid white;  */
+    background: rgb(240, 248, 255, .85);
+}
+
+.fishCard {
+    margin-bottom: 20px;
+}
+
+.fish__image {
+    max-height: 250px;
+    width: 375px;
+    object-fit: contain;
 }
 
 .harvestSites {
@@ -139,16 +149,46 @@ body {
     margin-right: 24px;
     margin-bottom: 12px;
     margin-left: 24px;
-    background-color: aliceblue;
+    background: rgb(240, 248, 255, .85);
     /* border: 4px solid white; */
 }
 
+#quote {
+    quotes: "“" "”" "‘" "’";
+    margin-bottom: 20px;
+  }
+
+#quote::before {
+      content: open-quote;
+  }
+
+#quote::after {
+      content: close-quote;
+  }
+
 .aside {
     padding: 24px;
+    margin-top: 24px;
+    margin-right: 24px;
+    margin-bottom: 12px;
+    margin-left: 24px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    height: fit-content;
     width: 30vw;
-    min-width: fit-content;
-    margin: 25px;
-    background-color: aliceblue;
+    min-width: 250px;
+    background: rgb(240, 248, 255, .85);
+}
+
+aside > p, h2 {
+    margin-bottom: 20px;
+}
+
+aside > h3 {
+    margin-bottom: 7px;
+}
+
+li {
+    margin-bottom: 7px;
+    font-weight: bold;
 }

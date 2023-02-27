@@ -6,19 +6,19 @@ export let FishList = () => {
     const fishes = getFish()
 
     // Start building a string filled with HTML syntax
-    const htmlString = '<article class="fishList">'
+    let htmlString = '<article class="fishList"> <h2>Fish List</h2>'
 
     // Create HTNL representations of each fish here
     for (const singleFish of fishes) {
 
         // Why is there a backtick used for this string?
-        htmlString += `<section class="fishList">
-            <div class="fish__species">${singleFish.species}</div>
-            <div class="fish__name">${singleFish.name}</div>
+        htmlString += `<section class="fishCard">
             <div><img  class="fish__image image--card" src="${singleFish.image}" /></div>
-            <div class="fish__length">${singleFish.length}</div>
-            <div class="fish__location">${singleFish.location}</div>
-            <div class="fish__diet">${singleFish.food}</div>
+            <div class="fish__name">Name: ${singleFish.name}</div>
+            <div class="fish__species">Species: ${singleFish.species}</div>
+            <div class="fish__length">Length: ${singleFish.length} inches</div>
+            <div class="fish__location">Harvest Site: ${singleFish.location}</div>
+            <div class="fish__diet">Fish Food: ${singleFish.food}</div>
         </section>
 `
     }
